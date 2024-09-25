@@ -1,0 +1,21 @@
+@use './typography' as *;
+
+// MAIN TYPEFACE
+
+$main-typeface: "Ubuntu", Helvetica, sans-serif;
+$display-typeface: "Averia", serif;
+
+
+// COLOURS
+
+$primary-black: #323232;
+$primary-white: #fff5ec;
+
+$secondary-black: #000000;
+$secondary-white: #ffffff;
+
+
+// MEDIA QUERIES
+
+$tablet-breakpoint: 48rem; /* 768px */
+$desktop-breakpoint: 80rem; /* 1280px */

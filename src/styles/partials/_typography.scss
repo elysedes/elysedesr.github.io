@@ -1,0 +1,49 @@
+// AVERIA
+
+@font-face {
+    font-family: "Averia";
+    src:url("../../assets/fonts/Averia-Bold.woff") format("woff2"),
+        url("../../assets/fonts/Averia-Bold.woff") format("woff"),
+        url("../../assets/fonts/Averia-Bold.ttf") format("truetype");
+        font-weight: 600;
+}
+
+
+// UBUNTU REG
+
+@font-face {
+    font-family: "Ubuntu";
+    src:url("../../assets/fonts/Ubuntu-Light.woff2") format("woff2"),
+        url("../../assets/fonts/Ubuntu-Light.woff") format("woff"),
+        url("../../assets/fonts/Ubuntu-Light.ttf") format("truetype");
+        font-weight: 200;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src:url("../../assets/fonts/Ubuntu-Medium.woff2") format("woff2"),
+        url("../../assets/fonts/Ubuntu-Medium.woff") format("woff"),
+        url("../../assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+        font-weight: 600;
+}
+
+
+// UBUNTU ITALIC
+
+@font-face {
+    font-family: "Ubuntu";
+    src:url("../../assets/fonts/Ubuntu-LightItalic.woff2") format("woff2"),
+        url("../../assets/fonts/Ubuntu-LightItalic.woff") format("woff"),
+        url("../../assets/fonts/Ubuntu-LightItalic.ttf") format("truetype");
+        font-weight: 200;
+        font-style: italic;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src:url("../../assets/fonts/Ubuntu-MediumItalic.woff2") format("woff2"),
+        url("../../assets/fonts/Ubuntu-MediumItalic.woff") format("woff"),
+        url("../../assets/fonts/Ubuntu-MediumItalic.ttf") format("truetype");
+        font-weight: 600;
+        font-style: italic;
+}
