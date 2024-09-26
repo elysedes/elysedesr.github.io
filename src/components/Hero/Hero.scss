@@ -1,5 +1,11 @@
+@use '../../styles/partials/mixins' as *;
+
 .hero {
-    background-color: rgb(123, 0, 255);
-    height: 100px;
-    width: 100%;
+    @include hero (url('../../assets/images/misty-lake.jpg'), 63vw, 50%);
+
+    &--overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
