@@ -1,5 +1,7 @@
+@use '../../styles/partials/variables' as *;
+
 .header {
-    background-color: rgb(0, 106, 255);
+    background-color: $primary-white;
     height: 100px;
     width: 100%;
     display: flex;
@@ -17,6 +19,20 @@
             align-items: center;
             list-style: none;
             padding: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        margin: 0 1rem;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: unset;
+
+        &:hover {
+            color: $primary-red;
+            border-bottom: 2px solid;
         }
     }
 }

@@ -1,5 +1,8 @@
+@use '../../styles/partials/variables' as *;
+
 .footer {
-    background-color: rgb(255, 4, 209);
+    background-color: $primary-black;
+    color: $primary-white;
     height: 100px;
     width: 100%;
 }

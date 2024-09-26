@@ -3,9 +3,12 @@ import './Hero.scss';
 const Hero = () => {
 
     return (
-        <div className="hero">
-            <div className="hero--overlay">
-            </div> 
+        <div className="hero__container">
+            <div className="hero">
+                <div className="hero--overlay">
+                    <h1 className="hero__text">A collection of creative design and web development work by Elyse Desrochers</h1>
+                </div>
+            </div>
         </div>
     )
 

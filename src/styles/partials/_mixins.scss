@@ -23,9 +23,10 @@
     background-size: cover;
     height: $bg-height; 
     max-height: 69vh;
+    margin: 0 1.69rem;
 
     &--overlay {
-        background-color: rgba(50,50,50,.5);
+        background-color: rgba(253, 231, 202, 0.5);
         display: flex;
         align-items: center;
         height: $bg-height;
@@ -39,6 +40,7 @@
 
     @include tablet {
         height: 63vw;
+        width: 80%;
     }
     }
 
