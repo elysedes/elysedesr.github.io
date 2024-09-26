@@ -1,6 +1,9 @@
 import './App.scss';
 import HomePage from './pages/HomePage';
 import PageNotFound from './pages/PageNotFound';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -2,4 +2,21 @@
     background-color: rgb(0, 106, 255);
     height: 100px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &__menu {
+        margin: 1rem;
+        
+        &-list {
+            margin: 0.75rem 0;
+            height: 1rem;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+        }
+    }
 }
