@@ -1,10 +1,27 @@
 import './Header.scss';
 import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
 
+    // const [isScrolled, setIsScrolled] = useState(false);
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //     const scrollTop = window.scrollY;
+
+    //     setIsScrolled(scrollTop > 0);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+
+    //     return () => {
+    //     window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+
     return (
-        <div className="header-container">
+        <div className='fixed'>
 
             <header className="header">
                 <nav className="header__menu">

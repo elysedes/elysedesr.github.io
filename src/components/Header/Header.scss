@@ -2,9 +2,10 @@
 @use '../../styles/partials/variables' as *;
 
 .header {
-    background-color: $primary-white;
-    height: 100px;
-    width: 100%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 
     &__menu {
@@ -17,6 +18,10 @@
             align-items: center;
             list-style: none;
             padding: 0;
+
+            &--none {
+                justify-content: center;
+            }    
         }
     }
 
@@ -26,7 +31,6 @@
         padding: 0.5rem 0;
         cursor: pointer;
         text-decoration: none;
-
         color: unset;
         background-image: linear-gradient($primary-black 0 0);
         background-position: 0 100%;
@@ -49,14 +53,18 @@
         }
 
         &--active {
-            background-color: $secondary-white;
             margin: 0 1rem;
             padding: 0.5rem;
             cursor: pointer;
             text-decoration: none;
-            color: unset;
+            color: $primary-white;
             font-family: $display-typeface;
             font-size: 0.769rem;
+            cursor: pointer;
+            background-color: $primary-black;
+            background-position: 100% 100%;
+            background-size: 100% 1px;
+
 
             @include tablet {
                 width: 4.969rem;
