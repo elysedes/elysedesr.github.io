@@ -3,6 +3,23 @@
 .footer {
     background-color: $primary-black;
     color: $primary-white;
-    height: 100px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9.369rem;
+
+    &__social {
+        margin: 1.369rem;
+    }
+
+    &__copyright {
+        margin: 1.369rem;
+    }
+
+    &__text {
+        font-size: smaller;
+        text-align: center;
+    }
 }

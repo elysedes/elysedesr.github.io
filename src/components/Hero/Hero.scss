@@ -1,20 +1,35 @@
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
 
 .hero {
+    z-index: 1;
 
     @include hero (url('../../assets/images/misty-lake.jpg'), 63vw, 50%);
 
     &--overlay {
         display: flex;
-        justify-content: center;
+        align-items: end;
+        justify-content: flex-start;
+    }
+
+    &--underlay {
+        background-color: $primary-black;
+        position: absolute;
+        bottom: -35px;
+        left: 5%;
+        height: 39%;
+        width: 39%;
+        z-index: -10;
+        transition: width 2s;
 
         @include tablet {
-            align-items: end;
-            justify-content: flex-start;
+            width: 69%;
         }
     }
 
     &__container {
+        position: relative;
+        margin-top: 3.696rem;
 
         @include tablet {
             display: flex;
@@ -28,7 +43,6 @@
 
         @include tablet {
             width: 66%;
-
         }
     }
 }

@@ -1,12 +1,10 @@
+@use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
 .header {
     background-color: $primary-white;
     height: 100px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
 
     &__menu {
@@ -28,11 +26,41 @@
         padding: 0.5rem 0;
         cursor: pointer;
         text-decoration: none;
+
         color: unset;
+        background-image: linear-gradient($primary-black 0 0);
+        background-position: 0 100%;
+        background-size: 0% 1px;
+        background-repeat: no-repeat;
+        transition:
+            background-size 0.3s,
+            background-position 0s 0.3s;
+
+        @include tablet {
+            width: 4.969rem;
+        }
 
         &:hover {
-            color: $primary-red;
-            border-bottom: 2px solid;
+            font-family: $display-typeface;
+            font-size: 0.769rem;
+            cursor: pointer;
+            background-position: 100% 100%;
+            background-size: 100% 1px;
+        }
+
+        &--active {
+            background-color: $secondary-white;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: unset;
+            font-family: $display-typeface;
+            font-size: 0.769rem;
+
+            @include tablet {
+                width: 4.969rem;
+            }
         }
     }
 }

@@ -36,12 +36,20 @@ h2 {
     @include tablet {
         font-size: 1.25rem;
     }
+
+    @include desktop {
+        font-size: 1.969rem;
+    }
 }
 
 h3 {
     font-size: 0.696rem;
     @include tablet {
         font-size: 1.125rem;
+    }
+
+    @include desktop {
+        font-size: 1.369rem;
     }
 }
 
