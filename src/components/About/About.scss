@@ -1,5 +1,44 @@
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 .about {
     margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        width: 80%;
+        margin: auto;
+    }
+
+    &__text {
+        width: 100%;
+
+        &:nth-child(even) {
+
+            @include tablet {
+                display: flex;
+                align-self: flex-end;
+            }
+            
+        }
+
+        &-block {
+            flex-direction: column;
+
+            @include tablet {
+                width: 60%;
+    
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 80%;
+
+        @include desktop {
+            width: 36%;
+        }
+    }
 }

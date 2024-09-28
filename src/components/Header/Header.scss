@@ -3,10 +3,14 @@
 
 .header {
     margin: 1rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     position: relative;
+
+    @include tablet {
+        display: flex;
+    }
 
     &__menu {
         margin: 1rem;
@@ -19,9 +23,9 @@
             list-style: none;
             padding: 0;
 
-            &--none {
-                justify-content: center;
-            }    
+            @include tablet {
+             
+            }
         }
     }
 

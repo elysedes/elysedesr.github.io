@@ -1,0 +1,59 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.nav {
+    margin: 0;
+    display: flex;
+    
+    &__menu-list {
+        margin: 0;
+        height: 1rem;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        background-color: $primary-black;
+    }
+
+    &__link {
+        display: flex;
+        margin: 1.369rem;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        text-decoration: none;
+        color: $primary-white;
+
+        @include tablet {
+            width: 4.969rem;
+        }
+
+        &:hover {
+            font-family: $display-typeface;
+            font-size: 0.769rem;
+            cursor: pointer;
+        }
+
+        &--active {
+            margin: 1rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: $primary-white;
+            font-family: $display-typeface;
+            font-size: 0.769rem;
+            cursor: pointer;
+            background-color: $primary-black;
+        }
+    }
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 69%;
+    background-color: $primary-black;
+    color: $primary-white;
+}

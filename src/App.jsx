@@ -4,14 +4,14 @@ import PageNotFound from './pages/PageNotFound';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
-import Header from './components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />

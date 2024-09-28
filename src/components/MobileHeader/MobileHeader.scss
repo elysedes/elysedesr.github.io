@@ -1,0 +1,33 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.mobile-header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 69%;
+    z-index: 20;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.hamburger-menu{
+    margin: 1.369rem;
+    cursor: pointer;
+    transform: scale(1.69);
+    color: $primary-black;
+}
+
+.close-menu {
+    left: 100px;
+    margin: 1.369rem;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    transform: scale(1.69);
+    color: $primary-white;
+    z-index: 20;
+}
