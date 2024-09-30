@@ -29,7 +29,8 @@
 
     &__container {
         position: relative;
-        margin-top: 3.696rem;
+        margin: 3.696rem auto;
+        height: 70vh;
 
         @include tablet {
             display: flex;
