@@ -1,5 +1,7 @@
+@use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
-.button__email {
-    background-color: $secondary-black;
+.button__link {
+    text-decoration: unset;
+    @include button ($primary-black, 100%, $secondary-white, $primary-black);
 }

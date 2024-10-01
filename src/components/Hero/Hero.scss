@@ -3,6 +3,7 @@
 
 .hero {
     z-index: 1;
+    height: 70vh;
 
     @include hero (url('../../assets/images/misty-lake.jpg'), 63vw, 50%);
 
@@ -15,22 +16,24 @@
     &--underlay {
         background-color: $primary-black;
         position: absolute;
-        bottom: -35px;
-        left: 5%;
+        top: 66%;
+        left: 2%;
         height: 39%;
         width: 39%;
         z-index: -10;
-        transition: width 2s;
+        transition: width 2s, left 2s;
 
         @include tablet {
             width: 69%;
+            left: 5%;
         }
     }
 
     &__container {
         position: relative;
         margin: 3.696rem auto;
-        height: 70vh;
+        height: 100%;
+        width: 100%;
 
         @include tablet {
             display: flex;

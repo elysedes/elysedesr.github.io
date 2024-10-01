@@ -1,9 +1,10 @@
+import './ButtonMailto.scss';
 import { Link } from "react-router-dom";
 
 const ButtonMailto = ({ mailto, label }) => {
     return (
-        <button className='button__email'>
             <Link
+                className="button__link"
                 to='#'
                 onClick={(e) => {
                     window.location.href = mailto;
@@ -12,7 +13,6 @@ const ButtonMailto = ({ mailto, label }) => {
             >
                 {label}
             </Link>
-        </button>
     );
 };
 

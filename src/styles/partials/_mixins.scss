@@ -14,7 +14,7 @@
     }
   }
 
-  // HERO IMAGE
+// HERO IMAGE
 
 @mixin hero ($bg-img, $bg-height, $bg-position) {
     background-image: $bg-img;
@@ -45,3 +45,67 @@
     }
 
 
+// IMAGES    
+
+@mixin image ($bg-img, $left, $right) {
+        background-image: $bg-img;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover; 
+        height: 100%;
+        width: 100%;
+        max-height: 39vh;
+        margin: 0;
+
+        &--overlay {
+            background-color: rgba(253, 231, 202, 0.5);
+            display: flex;
+            align-items: center;
+            height: 100%;
+            max-height: 39vh;
+            width: 100%;
+        }
+
+        &--underlay {
+            background-color: $primary-black;
+            position: absolute;
+            bottom: -35px;
+            right: $right;
+            left: $left;
+            height: 39%;
+            width: 39%;
+            z-index: -10;
+            transition: width 2s;
+    
+            @include tablet {
+                width: 69%;
+            }
+        }
+    }
+
+
+// BUTTONS
+
+@mixin button ($border, $width, $bg-colour, $font-colour) {
+    border: 1px solid $border;
+    width: $width;
+    background-color: $bg-colour;
+    color: $font-colour;
+    inset: none;
+    border-radius: 6px;
+    padding: 0.825rem 3rem;
+    font-family: $main-typeface;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include tablet {
+        max-width: 69%;
+    }
+
+    &:hover {
+        background-color: $primary-black;
+        border: 1px solid $secondary-white;
+        color: $primary-white;
+        cursor: pointer;
+    }
+}

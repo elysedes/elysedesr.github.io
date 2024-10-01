@@ -2,23 +2,39 @@
 @use '../../styles/partials/mixins' as *;
 
 .about {
-    margin: 1rem 3rem;
+    margin: 0 3rem;
     display: flex;
     flex-direction: column;
 
     @include tablet {
+        margin: 0 3.369rem;
+    }
+
+    @include desktop {
         width: 80%;
         margin: auto;
     }
 
     &__text {
         width: 100%;
+        margin: 3.369rem 0;
 
         &:nth-child(even) {
 
             @include tablet {
                 display: flex;
                 align-self: flex-end;
+                justify-content: space-between;
+            }
+        }
+
+        &:nth-child(odd) {
+
+            @include tablet {
+                display: flex;
+                align-self: flex-start;
+                flex-direction:row-reverse;
+                justify-content: space-between;
             }
             
         }
@@ -27,18 +43,26 @@
             flex-direction: column;
 
             @include tablet {
-                width: 60%;
-    
+                width: 56%;
+                gap: 1.369rem;
             }
         }
     }
 
-    &__image {
-        width: 100%;
-        height: 80%;
+    &__image-block {
+        width: 69%;
+        height: 33vh;
+        margin: auto;
+        position: relative;
 
-        @include desktop {
-            width: 36%;
+        @include tablet {
+            width: 33%;
         }
     }
+
+    &__portrait {
+        @include image (url('../../assets/images/self-portrait.png'), null, -5%)
+    }
+
+
 }
