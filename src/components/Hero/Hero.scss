@@ -5,7 +5,7 @@
     z-index: 1;
     height: 70vh;
 
-    @include hero (url('../../assets/images/misty-lake.jpg'), 63vw, 50%);
+    @include hero (url('../../assets/images/misty-lake.jpg'), 63vh, 50%);
 
     &--overlay {
         display: flex;
@@ -44,9 +44,15 @@
 
     &__text {
         margin: 1.36rem;
+        font-size: 1.69rem;
 
         @include tablet {
             width: 66%;
+            font-size: 2.69rem;
+        }
+    
+        @include desktop {
+            font-size: 3.69rem;
         }
     }
 }

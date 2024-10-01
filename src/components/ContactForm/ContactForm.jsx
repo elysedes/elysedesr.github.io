@@ -10,20 +10,23 @@ const ContactForm = () => {
     return (
       <div className="container">
         <h1>Find me Online</h1>
-        <div className="contact">
-          <div className="contact__email contact__div">
-            <h2>Email Me</h2>
-              {/* <button className="contact__button"> */}
+        <div className="container__sub">
+          <div className="container__left"></div>
+          <div className="container__right">
+            <div className="contact">
+              <div className="contact__email contact__div">
+                <h2>Email Me</h2>
                 <ButtonMailto label="Send a Message" mailto="mailto:elysedesr@gmail.com" />
-              {/* </button> */}
-          </div>
-          <div className="contact__social contact__div">
-            <h2>Social Links</h2>
-              <div className="contact__social-links">
-                <SocialIcon url="www.github.com" href="https://github.com/elysedes" bgColor="none" fgColor="#2d2d2d" ></SocialIcon>
-                <SocialIcon url="www.linkedin.com" href="https://www.linkedin.com/in/elyse-d/" bgColor="none" fgColor="#2d2d2d" ></SocialIcon>
-                <SocialIcon url="www.instagram.com" href="https://www.instagram.com/elysedesr/" bgColor="none" fgColor="#2d2d2d" ></SocialIcon>
               </div>
+              <div className="contact__social contact__div">
+                <h2>Social Links</h2>
+                  <div className="contact__social-links">
+                    <SocialIcon className="contact__social-icon" url="www.github.com" href="https://github.com/elysedes" bgColor="none" fgColor="#2d2d2d" ></SocialIcon>
+                    <SocialIcon className="contact__social-icon" url="www.linkedin.com" href="https://www.linkedin.com/in/elyse-d/" bgColor="none" fgColor="#2d2d2d" ></SocialIcon>
+                    <SocialIcon className="contact__social-icon" url="www.instagram.com" href="https://www.instagram.com/elysedesr/" bgColor="none" fgColor="#2d2d2d" ></SocialIcon>
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>  

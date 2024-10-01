@@ -23,7 +23,6 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 1.69rem;
     margin: 3.369rem 0;
     @include tablet {
         font-size: 2.69rem;
@@ -36,7 +35,9 @@ h1 {
 }
 
 h2 {
+    margin: 1.369rem 0;
     font-size: 0.969rem;
+    
     @include tablet {
         font-size: 1.25rem;
     }
