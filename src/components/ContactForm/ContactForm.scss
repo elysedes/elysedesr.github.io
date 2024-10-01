@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70vh;
     
     @include desktop {
         flex-direction: row;
         width: 80%;
-        height: 70vh;
         justify-content: center;
         align-items: flex-start;
         margin: auto;
@@ -18,6 +18,7 @@
     
 &__div {
     width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;

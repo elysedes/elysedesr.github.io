@@ -12,7 +12,7 @@ const Footer = () => {
             <footer className="footer">
                 <div className="footer__copyright">
                     <p className="footer__text">Designed and Developed by Elyse Desrochers</p>
-                    <p className="footer__text">©2024 Elyse Desrochers Art & Design</p>
+                    <p className="footer__text">©2024 Elyse Desrochers Creative</p>
                 </div>
                 <div className="footer__social">
                     <SocialIcon url="www.github.com" href="https://github.com/elysedes" bgColor="none" fgColor="white" ></SocialIcon>
